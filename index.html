@@ -1,0 +1,78 @@
+<!DOCTYPEhtml>
+<html>
+    <head lang="no">
+        <meta charset="utf-8">
+        <title>Voss film AS
+        </title>
+        <link rel="stylesheet" href="index.css">
+     </head>
+    <body>
+        <header>
+            <nav>
+                <a href="index.html" class="heim"><img style=" max-height: 150px;"class="logovoss" src="logovoss.png"></a>
+                <a href="informasjon.html">Om oss</a>
+                <a href="tjenester.html">Tjenester</a>
+                <a href="registrer.html">Registrere oppdrag</a>
+                <a href="sosial.html">Tryggleik og sosiale medium</a>
+            </nav>
+        </header>
+        <main>
+            <div class="kol-5">
+                <h1>Skjema for registrering av oppdrag</h1>
+                <a href="registrer.html">Registrering</a>
+            </div>
+            <div class="kol-6">
+                
+                <h2>Liste over tenester</h2>
+                <a href="tjenester.html">Tenester</a>
+            </div>
+                <div class="kol-12">
+                <h2>Døme på bilder me har tatt</h2>
+                <img src="https://firebasestorage.googleapis.com/v0/b/vossfilm-a7f92.appspot.com/o/DJI_0789.JPG?alt=media&token=421c8659-fd7a-4e45-beaf-7c0afadc37f2">
+                <img src="https://firebasestorage.googleapis.com/v0/b/vossfilm-a7f92.appspot.com/o/DJI_0785.JPG?alt=media&token=5dc6da9b-3ef5-4755-89ff-c3591821aaae">
+                <img src="https://firebasestorage.googleapis.com/v0/b/vossfilm-a7f92.appspot.com/o/DJI_0781.JPG?alt=media&token=0d71c9c4-c624-49fe-869e-889db02b879c">
+                <img src="https://firebasestorage.googleapis.com/v0/b/vossfilm-a7f92.appspot.com/o/DJI_0786.JPG?alt=media&token=2fde9bff-b5a0-4980-92dc-567b94d82343">
+            </div>
+           <div class="kol-12">
+            
+                <h2>Introduksjonsvideo på Voss gymnas</h2>
+               <video src="https://firebasestorage.googleapis.com/v0/b/vossfilm-a7f92.appspot.com/o/itfilm.mp4?alt=media&token=1d4512ca-9515-4afb-aa6a-22861d6fcb2d" fullscreen toggle controls></video>
+            </div>
+        
+
+        </main>
+<script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-app.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-analytics.js"></script>
+
+<script>
+    
+    let nymld={
+        "avsendar":"Fornamn";
+        "tekst":"Meldingen";
+    }
+    
+    letdatabase=firebase.database();
+    letmeldinger=database.ref("meldinger");
+    letnyMelding={
+        "avsender":"KariKu",
+        "tekst":"Nugåraltsåmegetbedre"{
+                 };
+    meldinger.push(nyMelding);
+
+  var firebaseConfig = {
+    apiKey: "AIzaSyC3kI0Ucbvo94WIVJwov7zeF0jVd5vy7AI",
+    authDomain: "vossfilm-a7f92.firebaseapp.com",
+    databaseURL: "https://vossfilm-a7f92-default-rtdb.europe-west1.firebasedatabase.app",
+    projectId: "vossfilm-a7f92",
+    storageBucket: "vossfilm-a7f92.appspot.com",
+    messagingSenderId: "960455352159",
+    appId: "1:960455352159:web:6af61b1991fb65ae7220ea",
+    measurementId: "G-9L5DPX192H"
+  };
+ 
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+    </body>
+</html> 

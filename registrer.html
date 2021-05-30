@@ -1,0 +1,42 @@
+<!DOCTYPEhtml>
+<html>
+    <head lang="no">
+        <meta charset="utf-8">
+        <title>Voss film AS
+        </title>
+         <link rel="stylesheet" href="index.css">
+     </head>
+    <body>
+        <header>
+            <nav>
+                <a href="index.html" class="heim"><img class="logovoss" src="logovoss.png"></a>
+                <a href="informasjon.html">Om oss</a>
+                <a href="tjenester.html">Tjenester</a>
+                <a href="registrer.html">Registrere oppdrag</a>
+                <a href="sosial.html">Tryggleik og sosiale medium</a>
+        </nav>
+    </header>
+      <label>Namn</label> <input type="text"><p>
+      <label>Mobil nr</label> <input type="number"><p>
+      <label>Oppdraget</label> <input type="text"> <br> <br>
+   
+        <input id="send" type="submit">   
+        
+        <script>
+            var firebaseConfig = {
+    apiKey: "AIzaSyC3kI0Ucbvo94WIVJwov7zeF0jVd5vy7AI",
+    authDomain: "vossfilm-a7f92.firebaseapp.com",
+    databaseURL: "https://vossfilm-a7f92-default-rtdb.europe-west1.firebasedatabase.app",
+    projectId: "vossfilm-a7f92",
+    storageBucket: "vossfilm-a7f92.appspot.com",
+    messagingSenderId: "960455352159",
+    appId: "1:960455352159:web:6af61b1991fb65ae7220ea",
+    measurementId: "G-9L5DPX192H"
+  };
+ 
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+        </script>
+        
+    </body>
+</html>
